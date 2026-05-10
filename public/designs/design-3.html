@@ -109,31 +109,52 @@
 </head>
 <body class="bg-background text-on-background min-h-screen flex flex-col">
 <!-- TopNavBar -->
-<header class="bg-surface dark:bg-surface w-full top-0 sticky z-50 border-b-2 border-on-surface dark:border-on-surface">
-<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-[1280px] mx-auto">
-<div class="font-headline-md text-headline-md font-black uppercase text-on-surface dark:text-on-surface">
-                Sport Club Unna
-            </div>
-<nav class="hidden md:flex gap-md items-center">
-<a class="text-primary dark:text-primary border-b-2 border-primary pb-1 font-bold uppercase transition-colors duration-200" href="#">News</a>
-<a class="text-on-surface dark:text-on-surface font-bold uppercase hover:text-primary transition-colors duration-200" href="#">Program</a>
-<a class="text-on-surface dark:text-on-surface font-bold uppercase hover:text-primary transition-colors duration-200" href="#">Board</a>
-<a class="text-on-surface dark:text-on-surface font-bold uppercase hover:text-primary transition-colors duration-200" href="#">Membership</a>
-</nav>
-<button class="hidden md:block bg-primary text-on-primary font-button text-button uppercase px-md py-sm rounded hover:brightness-110 transition-all scale-95 active:transition-transform">
-                Mitglied werden
-            </button>
-<!-- Mobile Menu Button -->
-<button class="md:hidden text-on-surface">
-<span class="material-symbols-outlined text-3xl">menu</span>
-</button>
+<style>
+.nav-dropdown:hover .nav-dropdown-menu,.nav-dropdown-menu:hover{display:block}
+.nav-dropdown-menu{display:none;position:absolute;top:100%;left:0;z-index:999}
+</style>
+<header class="bg-surface w-full top-0 sticky z-50 border-b-2 border-on-surface">
+<div class="flex justify-between items-center px-4 md:px-16 py-4 max-w-[1280px] mx-auto gap-4">
+  <a href="#" class="flex items-center gap-3 flex-shrink-0">
+    <img src="/sc-unna-logo.jpg" alt="SC Unna" class="h-10 w-10 rounded-full border-2 border-on-surface">
+    <span class="font-black uppercase text-on-surface text-base hidden xl:block">Sport Club Unna</span>
+  </a>
+  <nav class="hidden lg:flex gap-4 items-center text-xs">
+    <div class="nav-dropdown relative">
+      <button class="text-on-surface font-bold uppercase hover:text-primary transition-colors flex items-center gap-1 py-2 whitespace-nowrap">
+        Unsere Abteilungen
+        <svg class="w-3 h-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+      </button>
+      <div class="nav-dropdown-menu w-52 bg-surface border-2 border-on-surface">
+        <a href="#" class="block px-4 py-3 text-on-surface font-bold uppercase text-xs hover:text-primary hover:bg-surface-container-low transition-colors border-b-2 border-surface-container-high">Badminton</a>
+        <a href="#" class="block px-4 py-3 text-on-surface font-bold uppercase text-xs hover:text-primary hover:bg-surface-container-low transition-colors border-b-2 border-surface-container-high">Ski / Wintersport</a>
+        <a href="#" class="block px-4 py-3 text-on-surface font-bold uppercase text-xs hover:text-primary hover:bg-surface-container-low transition-colors border-b-2 border-surface-container-high">Radfahren</a>
+        <a href="#" class="block px-4 py-3 text-on-surface font-bold uppercase text-xs hover:text-primary hover:bg-surface-container-low transition-colors border-b-2 border-surface-container-high">Yoga</a>
+        <a href="#" class="block px-4 py-3 text-on-surface font-bold uppercase text-xs hover:text-primary hover:bg-surface-container-low transition-colors border-b-2 border-surface-container-high">Pilates</a>
+        <a href="#" class="block px-4 py-3 text-on-surface font-bold uppercase text-xs hover:text-primary hover:bg-surface-container-low transition-colors border-b-2 border-surface-container-high">Wassergymnastik</a>
+        <a href="#" class="block px-4 py-3 text-on-surface font-bold uppercase text-xs hover:text-primary hover:bg-surface-container-low transition-colors">Wandern</a>
+      </div>
+    </div>
+    <a class="text-on-surface font-bold uppercase hover:text-primary transition-colors whitespace-nowrap" href="#">Aktuelles</a>
+    <a class="text-on-surface font-bold uppercase hover:text-primary transition-colors whitespace-nowrap" href="#">Termine</a>
+    <a class="text-on-surface font-bold uppercase hover:text-primary transition-colors whitespace-nowrap" href="#">Vorstand</a>
+    <a class="text-on-surface font-bold uppercase hover:text-primary transition-colors whitespace-nowrap" href="#">Freizeiten</a>
+    <a class="text-on-surface font-bold uppercase hover:text-primary transition-colors whitespace-nowrap" href="#">Stammtisch</a>
+    <a class="text-on-surface font-bold uppercase hover:text-primary transition-colors whitespace-nowrap" href="#">Galerie</a>
+    <a class="text-on-surface font-bold uppercase hover:text-primary transition-colors whitespace-nowrap" href="#">Impressum</a>
+  </nav>
+  <div class="flex items-center gap-2 flex-shrink-0">
+    <button class="bg-primary text-on-primary font-button uppercase px-4 py-2 rounded hover:brightness-110 transition-all hidden md:block whitespace-nowrap text-xs">Mitglied werden</button>
+    <button class="lg:hidden text-on-surface"><span class="material-symbols-outlined text-3xl">menu</span></button>
+  </div>
 </div>
 </header>
+
 <main class="flex-grow">
 <!-- Hero Section -->
 <section class="relative bg-on-surface text-on-primary min-h-[614px] flex items-center justify-center overflow-hidden">
 <div class="absolute inset-0 z-0">
-<img alt="Athletes in motion" class="w-full h-full object-cover opacity-40 mix-blend-luminosity" data-alt="A dynamic, high-contrast black and white photograph of athletes sprinting in a stadium, capturing intense motion and power. The lighting is dramatic, emphasizing muscular definition and speed. A subtle red gradient overlay hints at the club's primary color palette, creating a strong, athletic aesthetic suitable for a high-performance sports club hero section." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLZaeFSRXm1zq5cSEBrEtaSUNt96Dfw2b8yrwHd_Lhx0i0gelU1UdBrS4pR-5PdFaZHhOCUXCo8dCSW9tmUYEprvZtzViZYgyAIkWARVNxtTD2YpyMjNRBgEJChVfdGg7RBu3-zGMQbKrP8u62ZoK_WYmwvtMcokMcEyc1GUDUSNIhT88IDdYpghVwXYCI8V7RKJKRFmglfofbn3wbrFU6xF-tbfIhzeyzG92SCAovzxgYNmRFZKyfID5LdN_vMTr2BM1xl4CZilM"/>
+<img alt="Athletes in motion" class="w-full h-full object-cover opacity-40 mix-blend-luminosity" data-alt="A dynamic, high-contrast black and white photograph of athletes sprinting in a stadium, capturing intense motion and power. The lighting is dramatic, emphasizing muscular definition and speed. A subtle red gradient overlay hints at the club's primary color palette, creating a strong, athletic aesthetic suitable for a high-performance sports club hero section." src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1400&q=80"/>
 </div>
 <div class="relative z-10 text-center px-margin-mobile max-w-[1000px] mx-auto">
 <h1 class="font-display-lg text-display-lg md:text-[72px] uppercase mb-md leading-tight">
@@ -166,7 +187,7 @@
 <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
 <!-- Large Feature Card -->
 <article class="md:col-span-2 group cursor-pointer bg-surface-container-lowest border-2 border-transparent hover:border-on-surface transition-colors duration-300 relative overflow-hidden flex flex-col justify-end min-h-[400px]">
-<img alt="Team celebration" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A high-contrast, energetic photo of a sports team celebrating a victory on the field. The lighting is bright and natural, capturing the raw emotion and camaraderie. The color palette emphasizes stark whites, deep shadows, and flashes of vibrant team colors, fitting perfectly with a modern, high-performance athletic club identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCljoL0sjcakodyok06C8Kvjp0knNimU4iJ81k_vf8yGytWbLtPYl88hayM69D6GbFfHCHPb0hf2GOOX8Z-pj469nZTi-TyBzFZQdeDjHdb7nqfM-KsLvkO4k4diIW7G_v95T_yjUYmHZAAMQ5sy1gbaUCys9BM4uo6zet1ucGB_alvD8Cz3Qzo8MM0PXZNfX7iuMVZWkiKuKqKLvlXPfTYkqllSw4jjIouTHgD5aRaUHzodMi7aNwTcGjgZBkFMhFDbIFhj_pw68s"/>
+<img alt="Team celebration" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A high-contrast, energetic photo of a sports team celebrating a victory on the field. The lighting is bright and natural, capturing the raw emotion and camaraderie. The color palette emphasizes stark whites, deep shadows, and flashes of vibrant team colors, fitting perfectly with a modern, high-performance athletic club identity." src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=1400&q=80"/>
 <div class="absolute inset-0 bg-gradient-to-t from-on-surface via-transparent to-transparent opacity-90"></div>
 <div class="relative z-10 p-md">
 <span class="inline-block bg-primary text-on-primary font-label-bold text-label-bold uppercase px-sm py-xs rounded mb-sm">Top Story</span>
@@ -339,7 +360,7 @@
 </div>
 <div class="flex-grow bg-surface border-2 border-on-surface min-h-[200px] flex items-center justify-center relative overflow-hidden" data-location="Unna, Germany" style="">
 <!-- Map Placeholder -->
-<img alt="Map of Unna" class="absolute inset-0 w-full h-full object-cover opacity-60 grayscale" data-alt="A stylized, high-contrast map view of Unna, Germany. The map is rendered in black and white with strong geometric lines representing streets and infrastructure. A distinct red marker or subtle red highlight indicates the location of the sports club, maintaining the clean, athletic, and functional design language of the interface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaErMUa0Yi3JyQ5ZUTjVNrlSkmR9qt6zBrtKR4t4zlKZwPMDTqMRc_J4oM7aBO7dV5HSj_m3M_hV4T8YYItWD7tMHqbKVSJTBMLmKv2cr77L-kvyxaLDm7ce4jC6QdS6rnrAxzeXJAuxaoFEaXuYjHCpoP21OP_ieAvW5CvIgZneT4IxU8mzBkFLafNlidIueIJE2nfVAbAuSlbmu1I0BBcZCj-zxBNa9V3nPjiv-xMUD1qs_Zco0JABAC7fqYp7vfZXgmGzHfN6k"/>
+<img alt="Map of Unna" class="absolute inset-0 w-full h-full object-cover opacity-60 grayscale" data-alt="A stylized, high-contrast map view of Unna, Germany. The map is rendered in black and white with strong geometric lines representing streets and infrastructure. A distinct red marker or subtle red highlight indicates the location of the sports club, maintaining the clean, athletic, and functional design language of the interface." src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=800&q=80"/>
 <div class="relative z-10 bg-on-surface text-on-primary px-sm py-xs font-label-bold uppercase flex items-center gap-xs">
 <span class="material-symbols-outlined text-primary">map</span> Karte öffnen
                             </div>
@@ -357,15 +378,15 @@
                     Sport Club Unna
                 </div>
 <p class="font-body-md text-body-md text-secondary">
-                    Vereint. Stärker. Gemeinsam. Seit 1963 die sportliche Heimat in Unna.
+                    Sport Club Unna e.V. – Ski · Badminton · Radfahren · Yoga · Schwimmen. Seit 1963 in Unna.
                 </p>
 </div>
 <div class="md:col-span-8 flex flex-col md:flex-row justify-end gap-lg md:gap-xl">
 <nav class="flex flex-col gap-sm">
 <span class="font-label-bold text-label-bold text-on-surface uppercase border-b-2 border-primary inline-block pb-xs mb-xs">Links</span>
-<a class="font-label-bold text-label-bold text-on-surface-variant hover:underline opacity-80 hover:opacity-100 transition-opacity" href="#">Contact</a>
-<a class="font-label-bold text-label-bold text-on-surface-variant hover:underline opacity-80 hover:opacity-100 transition-opacity" href="#">Imprint</a>
-<a class="font-label-bold text-label-bold text-on-surface-variant hover:underline opacity-80 hover:opacity-100 transition-opacity" href="#">Privacy Policy</a>
+<a class="font-label-bold text-label-bold text-on-surface-variant hover:underline opacity-80 hover:opacity-100 transition-opacity" href="#">Kontakt</a>
+<a class="font-label-bold text-label-bold text-on-surface-variant hover:underline opacity-80 hover:opacity-100 transition-opacity" href="#">Impressum</a>
+<a class="font-label-bold text-label-bold text-on-surface-variant hover:underline opacity-80 hover:opacity-100 transition-opacity" href="#">Datenschutz</a>
 </nav>
 <nav class="flex flex-col gap-sm">
 <span class="font-label-bold text-label-bold text-on-surface uppercase border-b-2 border-primary inline-block pb-xs mb-xs">Social</span>
