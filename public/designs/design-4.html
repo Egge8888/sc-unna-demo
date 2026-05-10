@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html class="light" lang="de"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sport Club Unna e.V. – Athletic Modernist</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-container": "#d3d3d3",
+                        "primary-container": "#a82d33",
+                        "inverse-primary": "#ffb3b0",
+                        "tertiary": "#424444",
+                        "secondary-fixed": "#e5e2e1",
+                        "primary-fixed": "#ffdad8",
+                        "on-surface-variant": "#584140",
+                        "surface-container-highest": "#e2e2e2",
+                        "inverse-on-surface": "#f0f1f1",
+                        "background": "#f9f9f9",
+                        "surface-container": "#eeeeee",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "surface-bright": "#f9f9f9",
+                        "surface-container-low": "#f3f3f4",
+                        "on-error": "#ffffff",
+                        "on-background": "#1a1c1c",
+                        "error": "#ba1a1a",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#5a5b5b",
+                        "secondary": "#5f5e5e",
+                        "inverse-surface": "#2f3131",
+                        "tertiary-fixed": "#e2e2e2",
+                        "primary-fixed-dim": "#ffb3b0",
+                        "secondary-container": "#e2dfde",
+                        "on-primary-container": "#ffc5c3",
+                        "primary": "#87131e",
+                        "on-secondary-container": "#636262",
+                        "on-secondary-fixed-variant": "#474746",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "surface-dim": "#dadada",
+                        "surface-tint": "#ad3036",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "on-error-container": "#93000a",
+                        "surface-variant": "#e2e2e2",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed": "#410006",
+                        "surface": "#f9f9f9",
+                        "on-surface": "#1a1c1c",
+                        "outline": "#8c716f",
+                        "on-secondary": "#ffffff",
+                        "outline-variant": "#dfbfbd",
+                        "surface-container-high": "#e8e8e8",
+                        "on-primary-fixed-variant": "#8b1721",
+                        "on-primary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin": "32px",
+                        "base": "8px",
+                        "sm": "12px",
+                        "md": "24px",
+                        "xs": "4px",
+                        "lg": "48px",
+                        "xl": "80px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Manrope"],
+                        "label-bold": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "display-xl": ["Manrope"],
+                        "headline-lg": ["Manrope"],
+                        "headline-md": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-bold": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "display-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "700"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .shadow-ambient {
+            box-shadow: 0px 8px 24px rgba(26, 26, 26, 0.04);
+        }
+        .shadow-ambient-hover:hover {
+            box-shadow: 0px 12px 32px rgba(26, 26, 26, 0.06);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased">
+<!-- TopNavBar -->
+<nav class="bg-surface shadow-sm sticky top-0 z-50 w-full">
+<div class="flex justify-between items-center w-full px-margin py-md max-w-7xl mx-auto">
+<div class="text-headline-md font-headline-md font-extrabold text-primary tracking-tighter">
+                SC Unna
+            </div>
+<div class="hidden md:flex items-center space-x-lg">
+<a class="text-primary border-b-2 border-primary font-label-bold text-label-bold pb-1" href="#">Sports</a>
+<a class="text-secondary font-label-bold text-label-bold hover:text-primary transition-colors duration-200" href="#">News</a>
+<a class="text-secondary font-label-bold text-label-bold hover:text-primary transition-colors duration-200" href="#">Termine</a>
+<a class="text-secondary font-label-bold text-label-bold hover:text-primary transition-colors duration-200" href="#">Vorstand</a>
+</div>
+<div>
+<button class="bg-primary text-on-primary font-label-bold text-label-bold py-sm px-md rounded-DEFAULT hover:opacity-90 transition-opacity">
+                    Mitglied werden
+                </button>
+</div>
+</div>
+</nav>
+<main class="max-w-7xl mx-auto px-margin py-xl space-y-xl">
+<!-- Hero Split Section -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-gutter">
+<!-- Left: Sports Tiles Bento -->
+<div class="grid grid-cols-2 gap-sm">
+<div class="col-span-2 relative h-64 rounded-xl overflow-hidden bg-surface-container shadow-ambient shadow-ambient-hover transition-all group">
+<img alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/ADBb0ujv1lWF5iRBTZGhlG-RYuM6M7XmuXa_HWWznRv90HQpWC5ucY-I1jmwDPNVO7NOoSVCWyHS6iMw17o4P1Am_2sXwDdENbWiCIFIECwHR1q7bQ3pY2DgE0IpmmJ1OreLpe8PBhIHj_XttJuSyFOxHsh0v332DKdIMfc-hR-Vnf_FQBEOf9U6Z23IUzlNCTLZaGz7SVppBrd5G-Ubk2A0vHVYSO9EdMhVqNIIaaGf8s3NLGlBaKG8MgaVamk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-md">
+<h3 class="font-headline-md text-headline-md text-on-primary">Ski / Wintersport</h3>
+</div>
+</div>
+<div class="relative h-48 rounded-xl overflow-hidden bg-primary-container shadow-ambient shadow-ambient-hover transition-all flex items-center justify-center group cursor-pointer">
+<div class="text-center">
+<span class="material-symbols-outlined text-display-xl text-on-primary-container block mb-base" style="font-variation-settings: 'FILL' 1;">directions_run</span>
+<span class="font-label-bold text-label-bold text-on-primary-container">Badminton</span>
+</div>
+</div>
+<div class="relative h-48 rounded-xl overflow-hidden bg-tertiary shadow-ambient shadow-ambient-hover transition-all flex items-center justify-center group cursor-pointer">
+<div class="text-center">
+<span class="material-symbols-outlined text-display-xl text-on-tertiary block mb-base" style="font-variation-settings: 'FILL' 1;">sports_tennis</span>
+<span class="font-label-bold text-label-bold text-on-tertiary">Wassergymnastik</span>
+</div>
+</div>
+</div>
+<!-- Right: Club Info -->
+<div class="bg-surface-container-lowest border border-surface-container-highest rounded-xl p-lg shadow-ambient flex flex-col justify-center">
+<h1 class="font-display-xl text-display-xl text-on-background mb-md">Sport Club Unna e.V. – Vereint · Stärker · Gemeinsam</h1>
+<p class="font-body-lg text-body-lg text-secondary mb-lg">Willkommen beim Sport Club Unna e.V. Wir verbinden sportliche Höchstleistung mit einer starken Gemeinschaft. Entdecke unser vielfältiges Sportangebot.</p>
+<div class="flex space-x-md">
+<button class="bg-primary text-on-primary font-label-bold text-label-bold py-sm px-lg rounded-DEFAULT hover:opacity-90 transition-opacity">
+                        Angebot entdecken
+                    </button>
+<button class="border-2 border-on-background text-on-background font-label-bold text-label-bold py-sm px-lg rounded-DEFAULT hover:bg-surface-container transition-colors">
+                        Kontakt
+                    </button>
+</div>
+</div>
+</section>
+<!-- News & Events Grid -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="md:col-span-2 space-y-md">
+<h2 class="font-headline-lg text-headline-lg text-on-background flex items-center">
+<span class="material-symbols-outlined mr-sm text-primary" style="font-variation-settings: 'FILL' 1;">newspaper</span>
+                    Aktuelle News
+                </h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-sm">
+<!-- News Card 1 -->
+<div class="bg-surface-container-lowest border border-surface-container-highest rounded-lg p-md shadow-ambient shadow-ambient-hover transition-all cursor-pointer">
+<div class="w-full h-40 bg-surface-container rounded-md mb-md overflow-hidden">
+<img alt="" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0ujwTpzPhE7jOCm6utrDa8HWoF9jEUNmG9-msbO45D6F8NY7Ya63I0VdCcOoYrvRwvpWNQrb6zjiaSnFPhFryFNIDLHt_Ce5l0KvTZ3uhVB1w-JOqCGtbBWs9UHZLv6jPfARhQ3Qi-yd-a8TxZQ5UfTmExRP15Gk3IyZe_cTS5yehtD9MI-wafmXiQp9UsGxcI-xs7zNnFjUsdjjDy-F73fn_rDBzB_XGktBTbd8bEo4ZMA_Xanv3VsVPqQ"/>
+</div>
+<span class="inline-block bg-primary/10 text-primary font-label-bold text-label-bold px-xs py-[2px] rounded mb-xs">Ski / Wintersport</span>
+<h4 class="font-headline-md text-headline-md text-on-background mb-xs">Fusion: SC Unna seit 01.04.2026</h4>
+<p class="font-body-md text-body-md text-secondary line-clamp-2">Der neue Sport Club Unna e.V. vereint alle Mitglieder von SKU und BSC Unna.</p>
+</div>
+<!-- News Card 2 -->
+<div class="bg-surface-container-lowest border border-surface-container-highest rounded-lg p-md shadow-ambient shadow-ambient-hover transition-all cursor-pointer">
+<div class="w-full h-40 bg-surface-container rounded-md mb-md overflow-hidden bg-[url('https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&amp;fit=crop&amp;q=80&amp;w=800')] bg-cover bg-center" data-alt="A dynamic shot of runners sprinting on a bright red athletic track under clear skies. The scene captures motion and speed, aligning with the modern, high-contrast aesthetic. The bright red track contrasts sharply with the deep shadows of the athletes.">
+</div>
+<span class="inline-block bg-primary/10 text-primary font-label-bold text-label-bold px-xs py-[2px] rounded mb-xs">Badminton</span>
+<h4 class="font-headline-md text-headline-md text-on-background mb-xs">Sommerfreizeit Zell am See 2026</h4>
+<p class="font-body-md text-body-md text-secondary line-clamp-2">Vom 28. Juni bis 5. Juli 2026 Sommerfreizeit in Österreich.</p>
+</div>
+</div>
+</div>
+<div class="space-y-md">
+<h2 class="font-headline-lg text-headline-lg text-on-background flex items-center">
+<span class="material-symbols-outlined mr-sm text-primary" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+                    Termine
+                </h2>
+<div class="bg-surface-container-lowest border border-surface-container-highest rounded-lg p-md shadow-ambient">
+<ul class="space-y-sm divide-y divide-surface-container-highest">
+<li class="py-sm flex items-start gap-sm">
+<div class="bg-surface-container-highest rounded p-xs text-center min-w-[50px]">
+<span class="block font-label-bold text-label-bold text-primary">15</span>
+<span class="block font-body-md text-body-md text-secondary text-sm">Okt</span>
+</div>
+<div>
+<p class="font-label-bold text-label-bold text-on-background">Sommerfreizeit Zell am See</p>
+<p class="font-body-md text-body-md text-secondary text-sm">28.06.–05.07.2026</p>
+</div>
+</li>
+<li class="py-sm flex items-start gap-sm">
+<div class="bg-surface-container-highest rounded p-xs text-center min-w-[50px]">
+<span class="block font-label-bold text-label-bold text-primary">22</span>
+<span class="block font-body-md text-body-md text-secondary text-sm">Okt</span>
+</div>
+<div>
+<p class="font-label-bold text-label-bold text-on-background">Skifreizeit Zell am See 2027</p>
+<p class="font-body-md text-body-md text-secondary text-sm">09.–16.01.2027</p>
+</div>
+</li>
+<li class="py-sm flex items-start gap-sm">
+<div class="bg-surface-container-highest rounded p-xs text-center min-w-[50px]">
+<span class="block font-label-bold text-label-bold text-primary">05</span>
+<span class="block font-body-md text-body-md text-secondary text-sm">Nov</span>
+</div>
+<div>
+<p class="font-label-bold text-label-bold text-on-background">BUS-Skifreizeit St. Ulrich</p>
+<p class="font-body-md text-body-md text-secondary text-sm">16.–23.01.2027</p>
+</div>
+</li>
+</ul>
+<button class="mt-md w-full border border-surface-container-highest text-on-background font-label-bold text-label-bold py-sm rounded hover:bg-surface-container transition-colors">
+                        Alle Termine
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest mt-xl">
+<div class="w-full px-margin py-lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-2 lg:col-span-1">
+<div class="text-headline-md font-headline-md font-extrabold text-primary mb-sm">
+                    SC Unna
+                </div>
+<p class="font-body-md text-body-md text-secondary mb-md">
+                    Gegründet 1963 · Fusion 01.04.2026 · Stralsunder Str. 63 · 59427 Unna
+                </p>
+</div>
+<div>
+<h4 class="font-label-bold text-label-bold text-on-surface-variant mb-sm">Kontakt</h4>
+<ul class="space-y-xs font-body-md text-body-md text-secondary">
+<li>Stralsunder Str. 63, 59427 Unna</li>
+<li>info@scunna.de</li>
+<li>02303/21960</li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-bold text-label-bold text-on-surface-variant mb-sm">Links</h4>
+<ul class="space-y-xs font-body-md text-body-md text-secondary">
+<li><a class="hover:text-primary transition-colors" href="#">Impressum</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Datenschutz</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Vorstand</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-bold text-label-bold text-on-surface-variant mb-sm">Social</h4>
+<div class="flex space-x-sm">
+<a class="text-secondary hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">share</span></a>
+</div>
+</div>
+</div>
+<div class="w-full px-margin py-md border-t border-surface-dim max-w-7xl mx-auto">
+<p class="font-body-md text-body-md text-secondary text-sm text-center">
+                © 2024 Sport Club Unna e.V. All rights reserved.
+            </p>
+</div>
+</footer>
+</body></html>
