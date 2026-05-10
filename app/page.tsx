@@ -71,9 +71,13 @@ export default function Home() {
       <header className="border-b border-white/10 sticky top-0 z-50 backdrop-blur-md bg-[#0a0a0a]/90">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <div className="w-8 h-8 bg-red-600 flex items-center justify-center">
-              <span className="text-white text-xs font-black">SC</span>
-            </div>
+            <Image
+              src="/sc-unna-logo.jpg"
+              alt="Sport Club Unna e.V. Logo"
+              width={40}
+              height={40}
+              className="rounded-full"
+            />
             <div>
               <div className="text-white font-black text-sm uppercase tracking-wider">
                 Sport Club Unna e.V.
@@ -97,6 +101,15 @@ export default function Home() {
           <span className="text-red-400 text-xs uppercase tracking-widest font-semibold">
             Fusion seit 01.04.2026
           </span>
+        </div>
+        <div className="flex justify-center mb-6">
+          <Image
+            src="/sc-unna-logo.jpg"
+            alt="Sport Club Unna e.V."
+            width={120}
+            height={120}
+            className="rounded-full border-4 border-red-600/30 shadow-2xl shadow-red-600/20"
+          />
         </div>
         <h1 className="text-5xl md:text-7xl font-black uppercase text-white mb-6 leading-none tracking-tighter">
           4 Designs für{" "}
@@ -213,9 +226,13 @@ export default function Home() {
       <footer className="border-t border-white/10 py-12">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <div className="w-6 h-6 bg-red-600 flex items-center justify-center">
-              <span className="text-white text-[10px] font-black">SC</span>
-            </div>
+            <Image
+              src="/sc-unna-logo.jpg"
+              alt="SC Unna Logo"
+              width={24}
+              height={24}
+              className="rounded-full opacity-60"
+            />
             <span className="text-zinc-600 text-sm">
               Sport Club Unna e.V. · Gegründet 1963 · Fusion 01.04.2026
             </span>
