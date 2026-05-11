@@ -1,7 +1,69 @@
 <!DOCTYPE html>
 
-<html>
-<head><title>Sport Club Unna e.V. – Athletic Precision</title></head>
+<html class="dark" lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sport Club Unna e.V. - Vorstand</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&amp;family=Lexend:wght@400;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "background": "#121414",
+                        "on-background": "#e3e2e2",
+                        "surface": "#121414",
+                        "surface-container-lowest": "#0d0e0f",
+                        "surface-container-low": "#1b1c1c",
+                        "surface-container-high": "#292a2a",
+                        "surface-variant": "#343535",
+                        "primary": "#ffb4a9",
+                        "primary-container": "#d91e18",
+                        "on-surface": "#e3e2e2",
+                        "on-secondary-container": "#b4b5b5",
+                        "on-surface-variant": "#e7bdb7"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "container-max": "1440px",
+                        "gutter": "24px",
+                        "margin": "40px",
+                        "section-padding": "120px"
+                    },
+                    fontFamily: {
+                        "headline-sm": ["Inter"],
+                        "body-md": ["Lexend"],
+                        "display-xl": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "body-lg": ["Lexend"],
+                        "label-bold": ["Lexend"]
+                    },
+                    fontSize: {
+                        "headline-sm": ["24px", {"lineHeight": "1.2", "fontWeight": "800"}],
+                        "body-md": ["16px", {"lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400"}],
+                        "display-xl": ["80px", {"lineHeight": "1.0", "letterSpacing": "0", "fontWeight": "900"}],
+                        "headline-md": ["32px", {"lineHeight": "1.2", "letterSpacing": "0", "fontWeight": "800"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                        "label-bold": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
 <body class="bg-background text-on-background font-body-md overflow-x-hidden">
 <!-- TopNavBar -->
 <style>
@@ -32,109 +94,113 @@
     </div>
     <a class="text-on-surface font-label-bold uppercase hover:text-primary transition-colors whitespace-nowrap" href="#">Aktuelles</a>
     <a class="text-on-surface font-label-bold uppercase hover:text-primary transition-colors whitespace-nowrap" href="#">Termine</a>
-    <a class="text-on-surface font-label-bold uppercase hover:text-primary transition-colors whitespace-nowrap" href="#">Vorstand</a>
+    <a class="text-primary font-label-bold uppercase transition-colors whitespace-nowrap" href="/designs/design-1-vorstand.html" aria-current="page">Vorstand</a>
     <a class="text-on-surface font-label-bold uppercase hover:text-primary transition-colors whitespace-nowrap" href="#">Freizeiten</a>
     <a class="text-on-surface font-label-bold uppercase hover:text-primary transition-colors whitespace-nowrap" href="#">Stammtisch</a>
     <a class="text-on-surface font-label-bold uppercase hover:text-primary transition-colors whitespace-nowrap" href="#">Galerie</a>
     <a class="text-on-surface font-label-bold uppercase hover:text-primary transition-colors whitespace-nowrap" href="#">Impressum</a>
   </nav>
+  <button class="bg-primary-container text-white px-5 py-2.5 font-label-bold uppercase text-xs active:scale-95 duration-100 hidden md:block whitespace-nowrap flex-shrink-0">Mitglied werden</button>
+  <button class="lg:hidden text-on-surface flex-shrink-0"><span class="material-symbols-outlined text-2xl">menu</span></button>
+</div>
+</header>
 <main class="mt-20">
-<section class="py-section-padding border-b border-surface-variant">
+<section class="py-16 md:py-20 border-b border-surface-variant">
 <div class="max-w-container-max mx-auto px-margin">
-<div class="mb-16">
+<div class="mb-12">
 <span class="font-label-bold uppercase text-primary mb-4 block">Das Team hinter dem SC Unna</span>
-<h1 class="font-display-xl text-display-xl uppercase mb-8 leading-none">Der Vorstand</h1>
-<p class="text-on-secondary-container font-body-lg max-w-2xl">10 engagierte Mitglieder leiten ehrenamtlich den Sport Club Unna e.V. Sie sind für jeden Bereich Ihres sportlichen Anliegens ansprechbar.</p>
+<h1 class="font-display-xl text-display-xl uppercase mb-8 leading-none">Der Vorstand des Ski Clubs</h1>
+<p class="text-on-secondary-container font-body-lg max-w-2xl">10 engagierte Mitglieder leiten ehrenamtlich den Sport Club Unna e.V. Hier finden Sie Aufgabenbereiche, Anschriften, Telefonnummern und E-Mail-Adressen.</p>
 </div>
 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
 <div class="space-y-4">
-<div class="aspect-[4/5] bg-surface relative overflow-hidden border border-surface-variant"><img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="/vorstand/erwin-mittmann.jpg" alt="Erwin Mittmann"/></div>
+<div class="h-40 bg-surface relative overflow-hidden border border-surface-variant"><img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="/vorstand/erwin-mittmann.jpg" alt="Erwin Mittmann"/></div>
 <div>
 <span class="font-label-bold text-primary uppercase text-xs">1. Vorsitzender</span>
 <h3 class="font-headline-md text-body-lg uppercase font-black mt-1">Erwin Mittmann</h3>
 <div class="text-xs text-on-secondary-container flex items-start gap-2"><span class="material-symbols-outlined text-sm mt-0.5">location_on</span><span>Peukinger Weg 4, 59423 Unna</span></div><div class="text-xs text-on-secondary-container flex items-center gap-2 mt-2"><span class="material-symbols-outlined text-sm">phone</span><span>02303 / 21960</span></div>
-<a href="mailto:erwin.mittmann@scunna.de" class="text-xs text-on-secondary-container hover:text-primary transition-colors mt-2 inline-flex items-center gap-1"><span class="material-symbols-outlined text-sm">mail</span> erwin.mittmann@scunna.de</a>
+<a href="mailto:erwin.mittmann@scunna.de" class="text-xs text-on-secondary-container hover:text-primary transition-colors mt-2 inline-flex items-center gap-1 break-all"><span class="material-symbols-outlined text-sm">mail</span> erwin.mittmann@scunna.de</a>
 </div>
 </div>
 <div class="space-y-4">
-<div class="aspect-[4/5] bg-surface relative overflow-hidden border border-surface-variant"><div class="w-full h-full bg-surface-container-high flex items-center justify-center"><span class="text-7xl font-black text-primary-container/30">MF</span></div></div>
+<div class="h-40 bg-surface relative overflow-hidden border border-surface-variant"><div class="w-full h-full bg-surface-container-high flex items-center justify-center"><span class="text-7xl font-black text-primary-container/30">MF</span></div></div>
 <div>
 <span class="font-label-bold text-primary uppercase text-xs">2. Vorsitzender</span>
 <h3 class="font-headline-md text-body-lg uppercase font-black mt-1">Matthias Fischer</h3>
 
-<a href="mailto:matthias.fischer@scunna.de" class="text-xs text-on-secondary-container hover:text-primary transition-colors mt-2 inline-flex items-center gap-1"><span class="material-symbols-outlined text-sm">mail</span> matthias.fischer@scunna.de</a>
+<a href="mailto:matthias.fischer@scunna.de" class="text-xs text-on-secondary-container hover:text-primary transition-colors mt-2 inline-flex items-center gap-1 break-all"><span class="material-symbols-outlined text-sm">mail</span> matthias.fischer@scunna.de</a>
 </div>
 </div>
 <div class="space-y-4">
-<div class="aspect-[4/5] bg-surface relative overflow-hidden border border-surface-variant"><img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="/vorstand/anne-hentrich.jpg" alt="Anne Hentrich"/></div>
+<div class="h-40 bg-surface relative overflow-hidden border border-surface-variant"><img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="/vorstand/anne-hentrich.jpg" alt="Anne Hentrich"/></div>
 <div>
 <span class="font-label-bold text-primary uppercase text-xs">Finanzen</span>
 <h3 class="font-headline-md text-body-lg uppercase font-black mt-1">Anne Hentrich</h3>
-<div class="text-xs text-on-secondary-container flex items-start gap-2"><span class="material-symbols-outlined text-sm mt-0.5">location_on</span><span>Stralsunder Str. 63, 59427 Unna</span></div><div class="text-xs text-on-secondary-container flex items-center gap-2 mt-2"><span class="material-symbols-outlined text-sm">phone</span><span>02303 / 538150</span></div>
-<a href="mailto:anne.hentrich@scunna.de" class="text-xs text-on-secondary-container hover:text-primary transition-colors mt-2 inline-flex items-center gap-1"><span class="material-symbols-outlined text-sm">mail</span> anne.hentrich@scunna.de</a>
+<div class="text-xs text-on-secondary-container flex items-start gap-2"><span class="material-symbols-outlined text-sm mt-0.5">location_on</span><span>Stralsunder Straße 63, 59427 Unna</span></div><div class="text-xs text-on-secondary-container flex items-center gap-2 mt-2"><span class="material-symbols-outlined text-sm">phone</span><span>02303 / 538150</span></div><div class="text-xs text-on-secondary-container flex items-center gap-2 mt-2"><span class="material-symbols-outlined text-sm">smartphone</span><span>0152 / 24822743</span></div>
+<a href="mailto:anne.hentrich@scunna.de" class="text-xs text-on-secondary-container hover:text-primary transition-colors mt-2 inline-flex items-center gap-1 break-all"><span class="material-symbols-outlined text-sm">mail</span> anne.hentrich@scunna.de</a>
 </div>
 </div>
 <div class="space-y-4">
-<div class="aspect-[4/5] bg-surface relative overflow-hidden border border-surface-variant"><div class="w-full h-full bg-surface-container-high flex items-center justify-center"><span class="text-7xl font-black text-primary-container/30">NH</span></div></div>
+<div class="h-40 bg-surface relative overflow-hidden border border-surface-variant"><div class="w-full h-full bg-surface-container-high flex items-center justify-center"><span class="text-7xl font-black text-primary-container/30">NH</span></div></div>
 <div>
 <span class="font-label-bold text-primary uppercase text-xs">Schriftführer</span>
 <h3 class="font-headline-md text-body-lg uppercase font-black mt-1">Nils Holt</h3>
 
-<a href="mailto:nils.holt@scunna.de" class="text-xs text-on-secondary-container hover:text-primary transition-colors mt-2 inline-flex items-center gap-1"><span class="material-symbols-outlined text-sm">mail</span> nils.holt@scunna.de</a>
+<a href="mailto:nils.holt@scunna.de" class="text-xs text-on-secondary-container hover:text-primary transition-colors mt-2 inline-flex items-center gap-1 break-all"><span class="material-symbols-outlined text-sm">mail</span> nils.holt@scunna.de</a>
 </div>
 </div>
 <div class="space-y-4">
-<div class="aspect-[4/5] bg-surface relative overflow-hidden border border-surface-variant"><img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="/vorstand/rainer-nordhaus.jpg" alt="Rainer Nordhaus"/></div>
+<div class="h-40 bg-surface relative overflow-hidden border border-surface-variant"><img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="/vorstand/rainer-nordhaus.jpg" alt="Rainer Nordhaus"/></div>
 <div>
 <span class="font-label-bold text-primary uppercase text-xs">Ski Sport</span>
 <h3 class="font-headline-md text-body-lg uppercase font-black mt-1">Rainer Nordhaus</h3>
-<div class="text-xs text-on-secondary-container flex items-start gap-2"><span class="material-symbols-outlined text-sm mt-0.5">location_on</span><span>Augustin-Wibbelt-Str. 27, 59423 Unna</span></div><div class="text-xs text-on-secondary-container flex items-center gap-2 mt-2"><span class="material-symbols-outlined text-sm">phone</span><span>0171 / 7719531</span></div>
-<a href="mailto:rainer.nordhaus@scunna.de" class="text-xs text-on-secondary-container hover:text-primary transition-colors mt-2 inline-flex items-center gap-1"><span class="material-symbols-outlined text-sm">mail</span> rainer.nordhaus@scunna.de</a>
+<div class="text-xs text-on-secondary-container flex items-start gap-2"><span class="material-symbols-outlined text-sm mt-0.5">location_on</span><span>Augustin-Wibbelt-Str. 27, 59423 Unna</span></div><div class="text-xs text-on-secondary-container flex items-center gap-2 mt-2"><span class="material-symbols-outlined text-sm">phone</span><span>0171 7719531</span></div>
+<a href="mailto:rainer.nordhaus@scunna.de" class="text-xs text-on-secondary-container hover:text-primary transition-colors mt-2 inline-flex items-center gap-1 break-all"><span class="material-symbols-outlined text-sm">mail</span> rainer.nordhaus@scunna.de</a>
 </div>
 </div>
 <div class="space-y-4">
-<div class="aspect-[4/5] bg-surface relative overflow-hidden border border-surface-variant"><img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="/vorstand/ingo-filbrandt.jpg" alt="Ingo Filbrandt"/></div>
+<div class="h-40 bg-surface relative overflow-hidden border border-surface-variant"><img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="/vorstand/ingo-filbrandt.jpg" alt="Ingo Filbrandt"/></div>
 <div>
 <span class="font-label-bold text-primary uppercase text-xs">Badminton</span>
 <h3 class="font-headline-md text-body-lg uppercase font-black mt-1">Ingo Filbrandt</h3>
-<div class="text-xs text-on-secondary-container flex items-start gap-2"><span class="material-symbols-outlined text-sm mt-0.5">location_on</span><span>Im Winkel 3a, 59174 Kamen</span></div><div class="text-xs text-on-secondary-container flex items-center gap-2 mt-2"><span class="material-symbols-outlined text-sm">phone</span><span>02307 / 967931</span></div>
-<a href="mailto:ingo.filbrandt@scunna.de" class="text-xs text-on-secondary-container hover:text-primary transition-colors mt-2 inline-flex items-center gap-1"><span class="material-symbols-outlined text-sm">mail</span> ingo.filbrandt@scunna.de</a>
+<div class="text-xs text-on-secondary-container flex items-start gap-2"><span class="material-symbols-outlined text-sm mt-0.5">location_on</span><span>Im Winkel 3a, 59174 Kamen</span></div><div class="text-xs text-on-secondary-container flex items-center gap-2 mt-2"><span class="material-symbols-outlined text-sm">phone</span><span>02307 / 967931</span></div><div class="text-xs text-on-secondary-container flex items-center gap-2 mt-2"><span class="material-symbols-outlined text-sm">smartphone</span><span>0174 / 4116177</span></div><div class="text-xs text-on-secondary-container flex items-center gap-2 mt-2"><span class="material-symbols-outlined text-sm">print</span><span>03212 / 1361080</span></div>
+<a href="mailto:ingo.filbrandt@scunna.de" class="text-xs text-on-secondary-container hover:text-primary transition-colors mt-2 inline-flex items-center gap-1 break-all"><span class="material-symbols-outlined text-sm">mail</span> ingo.filbrandt@scunna.de</a>
 </div>
 </div>
 <div class="space-y-4">
-<div class="aspect-[4/5] bg-surface relative overflow-hidden border border-surface-variant"><div class="w-full h-full bg-surface-container-high flex items-center justify-center"><span class="text-7xl font-black text-primary-container/30">LF</span></div></div>
+<div class="h-40 bg-surface relative overflow-hidden border border-surface-variant"><div class="w-full h-full bg-surface-container-high flex items-center justify-center"><span class="text-7xl font-black text-primary-container/30">LF</span></div></div>
 <div>
 <span class="font-label-bold text-primary uppercase text-xs">Jugend</span>
 <h3 class="font-headline-md text-body-lg uppercase font-black mt-1">Luke Colin Finke</h3>
 
-<a href="mailto:like.finke@scunna.de" class="text-xs text-on-secondary-container hover:text-primary transition-colors mt-2 inline-flex items-center gap-1"><span class="material-symbols-outlined text-sm">mail</span> like.finke@scunna.de</a>
+<a href="mailto:like.finke@scunna.de" class="text-xs text-on-secondary-container hover:text-primary transition-colors mt-2 inline-flex items-center gap-1 break-all"><span class="material-symbols-outlined text-sm">mail</span> like.finke@scunna.de</a>
 </div>
 </div>
 <div class="space-y-4">
-<div class="aspect-[4/5] bg-surface relative overflow-hidden border border-surface-variant"><img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="/vorstand/oliver-knieling.jpg" alt="Oliver Knieling"/></div>
+<div class="h-40 bg-surface relative overflow-hidden border border-surface-variant"><img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="/vorstand/oliver-knieling.jpg" alt="Oliver Knieling"/></div>
 <div>
 <span class="font-label-bold text-primary uppercase text-xs">Allgemeinsport / Veranstaltungen</span>
 <h3 class="font-headline-md text-body-lg uppercase font-black mt-1">Oliver Knieling</h3>
 <div class="text-xs text-on-secondary-container flex items-center gap-2 mt-2"><span class="material-symbols-outlined text-sm">phone</span><span>02303 / 63298</span></div>
-<a href="mailto:oliver.knieling@scunna.de" class="text-xs text-on-secondary-container hover:text-primary transition-colors mt-2 inline-flex items-center gap-1"><span class="material-symbols-outlined text-sm">mail</span> oliver.knieling@scunna.de</a>
+<a href="mailto:oliver.knieling@scunna.de" class="text-xs text-on-secondary-container hover:text-primary transition-colors mt-2 inline-flex items-center gap-1 break-all"><span class="material-symbols-outlined text-sm">mail</span> oliver.knieling@scunna.de</a>
 </div>
 </div>
 <div class="space-y-4">
-<div class="aspect-[4/5] bg-surface relative overflow-hidden border border-surface-variant"><img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="/vorstand/rolf-stuewe.jpg" alt="Rolf Stüwe"/></div>
+<div class="h-40 bg-surface relative overflow-hidden border border-surface-variant"><img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="/vorstand/rolf-stuewe.jpg" alt="Rolf Stüwe"/></div>
 <div>
 <span class="font-label-bold text-primary uppercase text-xs">Presse</span>
 <h3 class="font-headline-md text-body-lg uppercase font-black mt-1">Rolf Stüwe</h3>
 <div class="text-xs text-on-secondary-container flex items-start gap-2"><span class="material-symbols-outlined text-sm mt-0.5">location_on</span><span>Beethovenweg 4, 59439 Holzwickede</span></div><div class="text-xs text-on-secondary-container flex items-center gap-2 mt-2"><span class="material-symbols-outlined text-sm">phone</span><span>02301 / 9450938</span></div>
-<a href="mailto:rolf.stuewe@scunna.de" class="text-xs text-on-secondary-container hover:text-primary transition-colors mt-2 inline-flex items-center gap-1"><span class="material-symbols-outlined text-sm">mail</span> rolf.stuewe@scunna.de</a>
+<a href="mailto:rolf.stuewe@scunna.de" class="text-xs text-on-secondary-container hover:text-primary transition-colors mt-2 inline-flex items-center gap-1 break-all"><span class="material-symbols-outlined text-sm">mail</span> rolf.stuewe@scunna.de</a>
 </div>
 </div>
 <div class="space-y-4">
-<div class="aspect-[4/5] bg-surface relative overflow-hidden border border-surface-variant"><img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="/vorstand/sylvia-oberwoerder.jpg" alt="Sylvia Oberwörder"/></div>
+<div class="h-40 bg-surface relative overflow-hidden border border-surface-variant"><img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="/vorstand/sylvia-oberwoerder.jpg" alt="Sylvia Oberwörder"/></div>
 <div>
 <span class="font-label-bold text-primary uppercase text-xs">Soziales</span>
 <h3 class="font-headline-md text-body-lg uppercase font-black mt-1">Sylvia Oberwörder</h3>
 
-<a href="mailto:sylvia.oberwoerder@scunna.de" class="text-xs text-on-secondary-container hover:text-primary transition-colors mt-2 inline-flex items-center gap-1"><span class="material-symbols-outlined text-sm">mail</span> sylvia.oberwoerder@scunna.de</a>
+<a href="mailto:sylvia.oberwoerder@scunna.de" class="text-xs text-on-secondary-container hover:text-primary transition-colors mt-2 inline-flex items-center gap-1 break-all"><span class="material-symbols-outlined text-sm">mail</span> sylvia.oberwoerder@scunna.de</a>
 </div>
 </div>
 </div>
